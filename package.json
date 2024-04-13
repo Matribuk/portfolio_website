@@ -1,9 +1,11 @@
 {
+  "homepage": "https://matribuk.github.io/portfolio_website",
   "name": "react-portfolio-template",
   "version": "3.0",
   "private": true,
   "scripts": {
-    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
